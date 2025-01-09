@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickle Ordering</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Pickle Shop</h1>
+    </header>
+
+    <section class="pickles">
+        <h2>Our Pickles</h2>
+        <div class="pickle-list">
+            {% for pickle in pickles %}
+                <div class="pickle-item">
+                    <h3>{{ pickle.name }}</h3>
+                    <p>{{ pickle.description }}</p>
+                    <p><strong>Price:</strong> ${{ pickle.price }}</p>
+                    <a href="{{ url_for('add_to_cart', pickle_id=pickle.id) }}">Add to Cart</a>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <footer>
+        <a href="{{ url_for('cart') }}">Go to Cart</a>
+    </footer>
+</body>
+</html>

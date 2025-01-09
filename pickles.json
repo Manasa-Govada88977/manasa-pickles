@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Mango Pickle",
+    "description": "Tangy and spicy mango pickle made with raw mangoes.",
+    "price": 5.99
+  },
+  {
+    "id": 2,
+    "name": "Lemon Pickle",
+    "description": "Sour and spicy lemon pickle with mustard seeds.",
+    "price": 4.99
+  },
+  {
+    "id": 3,
+    "name": "Green Chili Pickle",
+    "description": "Spicy green chili pickle, perfect for heat lovers.",
+    "price": 6.49
+  },
+  {
+    "id": 4,
+    "name": "Garlic Pickle",
+    "description": "Garlic pickle with a bold, savory flavor.",
+    "price": 5.49
+  }
+]
